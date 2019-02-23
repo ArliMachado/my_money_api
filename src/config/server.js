@@ -9,3 +9,5 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
 server.listen(PORT, () => console.log(`Backend is running on port ${PORT}.`));
+
+module.exports = server;

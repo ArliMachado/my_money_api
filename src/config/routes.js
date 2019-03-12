@@ -24,4 +24,5 @@ module.exports = (server) => {
   server.use('/oapi', openApi);
   openApi.post('/login', AuthService.login);
   openApi.post('/signup', AuthService.signup);
+  openApi.post('/validateToken', AuthService.validateToken)
 };
